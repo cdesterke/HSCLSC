@@ -11,7 +11,15 @@ Hematopoietic stem cell (HSC) and leukemic stem cell (LSK) is an intensive field
 
 hsc<-hscquery(c("CXCR4","IDH1","FLT3","TET2","GAPDH","TBP","CD33","CD38"))
 
-compute hsc score
+* compute hsc score
 hscfinal<-hscscore(hsc)
-compute Fisher test with FDR corrected p-values
+
+* compute Fisher test with FDR corrected p-values
 hscfisher<-hsctest(hsc)
+
+## References
+
+-Holyoake TL, Vetrie D. The chronic myeloid leukemia stem cell: stemming the tide of persistence. Blood. 2017 Mar 23;129(12):1595-1606
+-Moreau Y, Tranchevent LC. Computational tools for prioritizing candidate genes: boosting disease gene discovery. Nat Rev Genet. 2012 Jul 3;13(8):523-36
+-NCBI Resource Coordinators. Database Resources of the National Center for Biotechnology Information. Nucleic Acids Res. 2017 Jan 4;45(D1):D12-D17.
+
