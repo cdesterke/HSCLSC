@@ -8,7 +8,9 @@ Hematopoietic stem cell (HSC) and leukemic stem cell (LSK) is an intensive field
 
 ## Usage
 query NCBI with input gene list
+'''{r}
 hsc<-hscquery(c("CXCR4","IDH1","FLT3","TET2","GAPDH","TBP","CD33","CD38"))
+'''
 compute hsc score
 hscfinal<-hscscore(hsc)
 compute Fisher test with FDR corrected p-values
